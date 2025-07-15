@@ -1,0 +1,27 @@
+id: default
+groups: {}
+comments: []
+routes:
+  - id: nntv6l
+    name: Transit_WebSrv
+    final: true
+    disabled: false
+    pipeline: passthru
+    description: ""
+    enableOutputExpression: false
+    outputExpression: null
+    filter: cribl_dataset=='Transit_WebSrv' && teamID=='SEE' && app=='nginx-rp' &&
+      sourcetype=='nginx-access-logs'
+    clones: []
+    output: Transit_WebSrv
+  - id: default
+    name: default
+    final: true
+    disabled: false
+    pipeline: main
+    description: ""
+    enableOutputExpression: false
+    outputExpression: null
+    filter: "true"
+    clones: []
+    output: devnull

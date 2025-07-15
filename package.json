@@ -1,0 +1,1 @@
+{"version":"0.0.1","tags":{"streamtags":[],"dataType":["logs","metrics","traces"]},"exports":[],"displayName":"IX (Interchange) Group Config Sync","description":"The one where we sync the default group with other IX groups","author":"JR","name":"IX_Interchange_Group_Config_Sync","minLogStreamVersion":"4.12.0"}

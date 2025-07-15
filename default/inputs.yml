@@ -1,0 +1,32 @@
+inputs:
+  Cribl_Transit_Ingest:
+    disabled: false
+    sendToRoutes: true
+    pqEnabled: false
+    streamtags: []
+    host: 0.0.0.0
+    tls:
+      disabled: false
+      requestCert: false
+      rejectUnauthorized: true
+      commonNameRegex: /.*/
+      certPath: $CRIBL_HOME/local/cribl/auth/certs/Cribl_Transit.crt
+      privKeyPath: $CRIBL_HOME/local/cribl/auth/certs/Cribl_Transit.key
+      certificateName: Cribl_Transit
+      minVersion: TLSv1.2
+      maxVersion: TLSv1.3
+    maxActiveReq: 256
+    maxRequestsPerSocket: 0
+    enableProxyHeader: false
+    captureHeaders: false
+    activityLogSampleRate: 100
+    requestTimeout: 0
+    socketTimeout: 0
+    keepAliveTimeout: 5
+    enableHealthCheck: false
+    ipAllowlistRegex: /.*/
+    ipDenylistRegex: /^$/
+    type: cribl_http
+    port: 10043
+    __template_port: port
+    __template_host: host
